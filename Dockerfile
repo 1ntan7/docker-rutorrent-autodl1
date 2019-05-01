@@ -1,4 +1,4 @@
-FROM lsiobase/nginx:3.8
+FROM lsiobase/nginx:arm32v7-3.9
 
 LABEL maintainer="horjulf"
 
@@ -93,3 +93,4 @@ ENV \
 
 # ports and volumes
 EXPOSE 80
+VOLUME /config /downloads
