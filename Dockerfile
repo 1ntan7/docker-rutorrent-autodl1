@@ -1,4 +1,4 @@
-FROM lsiobase/nginx:arm32v7-3.8
+FROM ghcr.io/linuxserver/baseimage-alpine-nginx:arm32v7-3.12
 
 LABEL maintainer="horjulf"
 
