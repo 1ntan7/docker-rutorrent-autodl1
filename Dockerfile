@@ -12,9 +12,9 @@ RUN \
 	g++ \
 	libffi-dev \
 	make \
+	patch \
 	musl \
 	openssl-dev \
-	perl-dev \
 	python3-dev && \
  echo "**** install packages ****" && \
  apk add --no-cache --upgrade \
@@ -35,11 +35,14 @@ RUN \
 	perl-archive-zip \
 	perl-digest-sha1 \
 	perl-html-parser \
+	php7-ctype \
 	perl-json \
+	perl-json-xs \
 	perl-net-ssleay \
 	perl-xml-libxml \
 	php7 \
 	php7-cgi \
+	php7-curl \
 	php7-json \
 	php7-mbstring \
 	php7-pear \
@@ -47,6 +50,7 @@ RUN \
 	php7-zip \
 	procps \
 	python3 \
+	py3-pip \
 	rtorrent \
 	sox \
 	tar \
@@ -56,10 +60,8 @@ RUN \
 	xz \
 	zip \
 	zlib && \
- echo "**** install perl dependencies ****" && \
-	PERL_MM_USE_DEFAULT=1 cpan JSON::XS && \
  echo "**** setup python pip dependencies ****" && \
- python3 -m pip install --no-cache-dir -U \
+ pip install --no-cache-dir -U \
 	cloudscraper \
 	pip \
 	requests \
