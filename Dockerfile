@@ -1,4 +1,4 @@
-FROM lsiobase/nginx:arm32v7-3.14
+FROM lsiobase/nginx:arm32v7-3.12
 
 LABEL maintainer="horjulf"
 
