@@ -54,6 +54,7 @@ RUN \
 	rtorrent \
 	sox \
 	tar \
+	unrar \
 	unzip \
 	wget \
 	xz \
