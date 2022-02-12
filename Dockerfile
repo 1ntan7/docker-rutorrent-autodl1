@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine-nginx:arm32v7-3.12
+FROM ghcr.io/linuxserver/baseimage-alpine-nginx:arm32v7-3.15
 
 LABEL maintainer="horjulf"
 
